@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exam Countdown & Study Planner</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>📚 Exam Countdown & Study Planner</h1>
+    <p>Plan your preparation and track your exam</p>
+    </header>
+
+    <main>
+    <section class="card">
+    <h2>Create Study Plan</h2>
+    <form id="planForm">
+
+    <label>Exam Name</label>
+    <input id="examName" placeholder="Enter exam name" required>
+
+    <label>Exam Date</label>
+    <input id="examDate" type="date" required>
+
+    <label>Study Topics</label>
+    <input id="topics" placeholder="HTML, CSS, JavaScript" required>
+
+    <label>Sub-topics</label>
+    <input id="subtopics" placeholder="Tags, Flexbox, DOM">
+
+    <div class="row">
+    <div>
+    <label>Hours / Topic</label>
+    <input id="hours" type="number" min="0" value="1">
+    </div>
+    <div>
+    <label>Minutes / Topic</label>
+    <input id="minutes" type="number" min="0" max="59" value="30">
+    </div>
+    </div>
+
+    <button type="submit">➕ Add Exam</button>
+    </form>
+    </section>
+
+    <section class="card">
+    <h2>⏳ Countdown</h2>
+    <div id="countdown">Enter an exam date</div>
+    </section>
+
+    <section class="card">
+    <h2>📋 Generated Study Plan</h2>
+    <div id="planOutput">Your study plan will appear here.</div>
+    </section>
+
+    <section class="card">
+    <h2>📂 Previous Plans</h2>
+    <button id="showPlans">Show Previous Plans</button>
+    <div id="previous"></div>
+    </section>
+    </main>
+
+    <footer>
+    <p>© 2026 Exam Study Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,126 @@
+*{
+    box-sizing:border-box;
+      margin:0;
+        padding:0;
+          font-family:Arial,sans-serif;
+          }
+
+          body{
+            background:#f1f5f9;
+              color:#172033;
+              }
+
+              header{
+                text-align:center;
+                  padding:30px 15px;
+                    background:linear-gradient(135deg,#2563eb,#7c3aed);
+                      color:white;
+                      }
+
+                      header h1{
+                        font-size:30px;
+                          margin-bottom:8px;
+                          }
+
+                          main{
+                            width:90%;
+                              max-width:900px;
+                                margin:25px auto;
+                                }
+
+                                .card{
+                                  background:white;
+                                    padding:22px;
+                                      margin-bottom:20px;
+                                        border-radius:14px;
+                                          box-shadow:0 4px 15px #0002;
+                                          }
+
+                                          h2{
+                                            color:#2563eb;
+                                              margin-bottom:15px;
+                                              }
+
+                                              label{
+                                                display:block;
+                                                  margin:12px 0 5px;
+                                                    font-weight:bold;
+                                                    }
+
+                                                    input{
+                                                      width:100%;
+                                                        padding:11px;
+                                                          border:1px solid #ccd2dc;
+                                                            border-radius:7px;
+                                                              outline:none;
+                                                              }
+
+                                                              input:focus{
+                                                                border-color:#2563eb;
+                                                                }
+
+                                                                .row{
+                                                                  display:flex;
+                                                                    gap:15px;
+                                                                    }
+
+                                                                    .row div{
+                                                                      flex:1;
+                                                                      }
+
+                                                                      button{
+                                                                        margin-top:18px;
+                                                                          width:100%;
+                                                                            padding:12px;
+                                                                              border:0;
+                                                                                border-radius:7px;
+                                                                                  background:#16a34a;
+                                                                                    color:white;
+                                                                                      font-weight:bold;
+                                                                                        cursor:pointer;
+                                                                                        }
+
+                                                                                        button:hover{
+                                                                                          background:#15803d;
+                                                                                          }
+
+                                                                                          #countdown{
+                                                                                            text-align:center;
+                                                                                              font-size:25px;
+                                                                                                font-weight:bold;
+                                                                                                  padding:15px;
+                                                                                                    color:#dc2626;
+                                                                                                    }
+
+                                                                                                    .plan{
+                                                                                                      padding:15px;
+                                                                                                        background:#eff6ff;
+                                                                                                          border-left:5px solid #2563eb;
+                                                                                                            margin-top:10px;
+                                                                                                              border-radius:6px;
+                                                                                                              }
+
+                                                                                                              .previous{
+                                                                                                                margin-top:12px;
+                                                                                                                  padding:14px;
+                                                                                                                    border:1px solid #ddd;
+                                                                                                                      border-radius:8px;
+                                                                                                                      }
+
+                                                                                                                      .delete{
+                                                                                                                        background:#dc2626;
+                                                                                                                          margin-top:10px;
+                                                                                                                          }
+
+                                                                                                                          footer{
+                                                                                                                            text-align:center;
+                                                                                                                              padding:20px;
+                                                                                                                                color:#64748b;
+                                                                                                                                }
+
+                                                                                                                                @media(max-width:600px){
+                                                                                                                                  header h1{font-size:23px}
+                                                                                                                                    .row{flex-direction:column;gap:0}
+                                                                                                                                      main{width:94%}
+                                                                                                                                      }
+}
